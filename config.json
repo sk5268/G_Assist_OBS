@@ -1,0 +1,11 @@
+{
+  "host": "localhost",
+  "port": 4455,
+  "password": "",
+  "brb_scene": "BRB",
+  "main_scene": "Main",
+  "intro_scene": "Intro",
+  "outro_scene": "Outro",
+  "sponsor_scene": "Sponsor",
+  "mic_source": "Mic/Aux"
+}

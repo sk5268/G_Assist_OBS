@@ -1,0 +1,82 @@
+{
+  "manifestVersion": 1,
+  "executable": "./g-assist-plugin-obs.exe",
+  "persistent": true,
+  "functions": [
+    {
+      "name": "play_brb_scene",
+      "description": "Switches to the Be Right Back scene in OBS.",
+      "tags": ["obs", "scene", "brb"],
+      "properties": {
+        "scene_name": {
+          "type": "string",
+          "description": "Optional custom name of the BRB scene"
+        }
+      }
+    },
+    {
+      "name": "resume_stream",
+      "description": "Switches back to the main streaming scene.",
+      "tags": ["obs", "scene", "resume"],
+      "properties": {
+        "scene_name": {
+          "type": "string",
+          "description": "Optional custom name of the main scene"
+        }
+      }
+    },
+    {
+      "name": "mute_mic",
+      "description": "Toggles mute on the microphone audio source.",
+      "tags": ["obs", "audio", "mic"],
+      "properties": {
+        "mic_source": {
+          "type": "string",
+          "description": "Name of the microphone source to toggle mute"
+        }
+      }
+    },
+    {
+      "name": "play_intro",
+      "description": "Switches to the intro scene.",
+      "tags": ["obs", "scene", "intro"],
+      "properties": {
+        "scene_name": {
+          "type": "string",
+          "description": "Name of the intro scene"
+        }
+      }
+    },
+    {
+      "name": "play_outro",
+      "description": "Switches to the outro scene.",
+      "tags": ["obs", "scene", "outro"],
+      "properties": {
+        "scene_name": {
+          "type": "string",
+          "description": "Name of the outro scene"
+        }
+      }
+    },
+    {
+      "name": "run_sponsor_break",
+      "description": "Switches to a sponsor scene for 60 seconds, then returns to main scene.",
+      "tags": ["obs", "scene", "sponsor"],
+      "properties": {
+        "sponsor_scene": {
+          "type": "string",
+          "description": "Name of the sponsor break scene"
+        },
+        "main_scene": {
+          "type": "string",
+          "description": "Name of the main scene to return to"
+        }
+      }
+    },
+    {
+      "name": "clip_last_30_seconds",
+      "description": "Saves a clip of the last 30 seconds using OBS replay buffer.",
+      "tags": ["obs", "clip", "replay"]
+    }
+  ]
+}
